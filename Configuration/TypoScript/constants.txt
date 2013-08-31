@@ -1,0 +1,14 @@
+plugin.tx_adobedps {
+	view {
+		 # cat=plugin.tx_adobedps/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:adobedps/Resources/Private/Templates/
+		 # cat=plugin.tx_adobedps/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:adobedps/Resources/Private/Partials/
+		 # cat=plugin.tx_adobedps/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:adobedps/Resources/Private/Layouts/
+	}
+	persistence {
+		 # cat=plugin.tx_adobedps//a; type=string; label=Sysfolder with all items
+		storagePid = 
+	}
+}

@@ -1,0 +1,23 @@
+
+##################################
+# Page Object for an API Request #
+##################################
+
+adobedpspage = PAGE
+adobedpspage {
+	typeNum = 428
+	10 < tt_content.list.20.adobedps_authapi
+	config {
+		disableAllHeaderCode = 1
+		additionalHeaders = Content-type:application/xml;charset=utf-8
+		additionalHeaders = Content-type:text/xml;charset=utf-8
+		xhtml_cleaning = 0
+	}
+}
+
+config.tx_extbase.persistence.classes {
+	Tx_Adobedps_Domain_Model_FrontendUser {
+		mapping.tableName = fe_users
+		storagePid = 39
+	}
+}

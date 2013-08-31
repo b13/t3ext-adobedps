@@ -1,0 +1,14 @@
+ # Plugin configuration
+plugin.tx_adobedps {
+	settings {
+
+	}
+	persistence {
+		storagePid = {$plugin.tx_adobedps.persistence.storagePid}
+	}
+	view {
+		templateRootPath = {$plugin.tx_adobedps.view.templateRootPath}
+		partialRootPath = {$plugin.tx_adobedps.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_adobedps.view.layoutRootPath}
+	}
+}
